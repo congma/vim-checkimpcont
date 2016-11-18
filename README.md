@@ -1,7 +1,7 @@
 ## vim-checkimpcont ##
 
 Vim plugin for [checkimpcont][cic], a tool that detects possibly misleading
-string literal concatenations in Python-2.x sources
+string literal concatenations in Python-2.x sources.
 
 
 ## Installation ##
@@ -9,8 +9,7 @@ string literal concatenations in Python-2.x sources
 1.  First, please install the Python script [checkimpcont.py][cic].
 2.  After that, put the Vim plugin script in your `.vim/ftplugin/python`
     directory.
-3.  Alternatively, you can also use [`pathogen`][pathogen] to install the
-    plugin.
+3.  Alternatively, you can use [`pathogen`][pathogen] to install the plugin.
 
 
 ## Usage ##

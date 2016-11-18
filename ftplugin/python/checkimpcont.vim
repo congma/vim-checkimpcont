@@ -29,12 +29,12 @@ function! <SID>CheckImpCont()
     cclose
     let l:grepformat_save = &grepformat
     let l:grepprg_save = &grepprg
-    set grepformat=%-P[%f],%A%l:%c:\ %t%.%#:\ %m,%-C%s,%-C%p^
-    set grepprg=(echo\ ['%'];checkimpcont.py\ '%')
+    setlocal grepformat=%-P[%f],%A%l:%c:\ %t%.%#:\ %m,%-C%s,%-C%p^
+    setlocal grepprg=(echo\ ['%'];checkimpcont.py\ '%')
     if &readonly == 0 | update | endif
     silent grep!
-    let &grepformat = l:grepformat_save
-    let &grepprg = l:grepprg_save
+    let &l:grepformat = l:grepformat_save
+    let &l:grepprg = l:grepprg_save
     belowright cwindow
     set nolazyredraw
     redraw!
